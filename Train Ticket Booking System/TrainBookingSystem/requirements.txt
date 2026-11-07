@@ -1,0 +1,15 @@
+# Bangladesh Railway - Ticket Booking System
+# Required Python Packages
+
+# API Server
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# API Client
+requests>=2.31.0
+
+# Image Generation (optional, for ticket images)
+pillow>=10.0.0
+qrcode>=7.4.0
+

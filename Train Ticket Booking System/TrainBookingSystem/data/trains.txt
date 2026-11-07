@@ -1,0 +1,16 @@
+T001|Sundarban Express|Dhaka-Khulna|3|40|650.00
+T002|Silk City Express|Dhaka-Rajshahi|2|40|500.00
+T003|Turna Nishita Express|Dhaka-Chittagong|3|40|600.00
+T004|Ekota Express|Dhaka-Dinajpur|2|40|650.00
+T005|Lalmoni Express|Dhaka-Lalmonirhat|2|40|700.00
+T006|Joyantika Express|Dhaka-Sylhet|2|40|550.00
+T007|Paharika Express|Chittagong-Sylhet|2|40|500.00
+T008|Intercity Express|Dhaka-Chittagong|2|40|600.00
+T009|Upaban Express|Dhaka-Sylhet|2|40|650.00
+T010|Kalni Express|Dhaka-Sylhet|2|40|600.00
+T011|Bijoy Express|Chittagong-Mymensingh|2|40|550.00
+T012|Bandhan Express|Khulna-Kolkata|2|40|1200.00
+T013|Dhumketu Express|Dhaka-Rajshahi|2|40|700.00
+T014|Shonar Bangla Express|Dhaka-Chittagong|2|40|800.00
+T101|Oikko Bangla|Dhaka-Calcutta|6|40|1500.00
+T103|Hameem International|Dhaka-Karachi|10|60|7000.00
