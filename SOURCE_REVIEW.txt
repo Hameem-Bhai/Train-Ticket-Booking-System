@@ -1,0 +1,35 @@
+SOURCE REVIEW - TRAIN TICKET BOOKING SYSTEM
+Scope: root and nested README, V2 directory, requirements, client, launcher,
+visible server source and GUI source. Large server/GUI results were truncated;
+this is a targeted review, not exhaustive. No application execution was performed.
+
+PRIORITIES
+P0 - Before any real/public use:
+- Inspect tracked data_v2/auth.json and bookings.txt privately. No record values
+  were retrieved for this pack. If real credentials/tokens were exposed, invalidate
+  them and handle history cleanup; deleting the current file alone is insufficient.
+- Replace SHA256 password hashing with an adaptive salted password library.
+- Enforce token expiry and owner/admin permissions. Audit login-code exposure.
+- Keep the API bound to loopback while these items remain unresolved.
+
+P1 - Correctness:
+- get_next_booking_id reloads the on-disk bookings list. Batch and round-trip loops
+  append only in memory, so their calls can produce repeated IDs until final save.
+- Round-trip checks only BOOKED; single/batch availability also blocks PAID and
+  REFUND_REQUESTED. Centralize a single definition of occupied seats.
+- Client add_train/update_train sends JSON but server scalar parameters are query
+  parameters. Define request models or consistently send query arguments.
+- Verify duplicate seat lists, dates, coach bounds, seat bounds and refund repeats.
+- Move persistence to transactional SQLite (single machine) or another suitable
+  database; use a unique active seat constraint and atomic multi-seat booking.
+
+P2 - Repository presentation:
+- Make V2 the clear entry point while keeping V1 as labeled history.
+- Add real screenshots without passenger or account data.
+- Remove __pycache__ from tracking and move source ZIP to a release asset if useful.
+- Replace stale guide links and machine-specific G: paths with portable commands.
+- Do not claim production-ready code, measured response times, real-time railway
+  feeds, or SMS delivery without implementation and tests.
+- Choose a license deliberately. No top-level license was listed.
+
+The accompanying README already documents these limitations without modifying code.

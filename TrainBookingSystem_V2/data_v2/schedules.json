@@ -1,0 +1,25 @@
+{
+  "T001": {
+    "departure_time": "08:00",
+    "arrival_time": "14:30",
+    "platform": "3",
+    "delay_minutes": 0,
+    "stations": [
+      {
+        "name": "Dhaka",
+        "arrival": "08:00",
+        "departure": "08:00"
+      },
+      {
+        "name": "Jessore",
+        "arrival": "11:30",
+        "departure": "11:45"
+      },
+      {
+        "name": "Khulna",
+        "arrival": "14:30",
+        "departure": "14:30"
+      }
+    ]
+  }
+}

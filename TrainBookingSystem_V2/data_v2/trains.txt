@@ -1,0 +1,8 @@
+T001|Sundarban Express|Dhaka-Khulna|3|40|550
+T002|Silk City Express|Dhaka-Rajshahi|2|40|500
+T003|Parabat Express|Dhaka-Chittagong|4|40|600
+T004|Rangpur Express|Dhaka-Rangpur|3|40|520
+T005|Upaban Express|Dhaka-Sylhet|3|40|580
+T006|Karnaphuli Express|Chittagong-Dhaka|4|40|600
+T007|Cox's Bazar Express|Dhaka-Cox's Bazar|3|40|650
+T008|Sonar Bangla|Dhaka-Khulna|4|40|580

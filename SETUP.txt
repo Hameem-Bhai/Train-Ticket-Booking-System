@@ -1,0 +1,26 @@
+COPY INTO THE REPOSITORY ROOT
+- README.md replaces the root one-line README.
+- docs/ contains two local looping GIFs.
+- SOURCE_REVIEW.txt is optional internal review material.
+
+Do not place the new README only inside TrainBookingSystem_V2: the relative
+animation paths and nested setup instructions target the repository root.
+This pack contains no application code changes and does not fix the review findings.
+
+Commit the README and docs directory, then push. No Actions, external image host,
+or secrets are needed for the animations. Both are illustrative, not app captures.
+
+Suggested .gitignore additions (review before applying):
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+Consider ignoring runtime auth, booking, refund, user and ticket records, keeping
+sanitized fixtures separately. Ignore patterns do not untrack existing files or
+remove sensitive data from history. Do not delete useful demo seeds blindly.
+
+Verification performed: archive integrity, GIF multi-frame decoding and loop
+metadata, and README image references. No GUI or API execution performed.
